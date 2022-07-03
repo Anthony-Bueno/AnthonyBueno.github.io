@@ -1,0 +1,162 @@
+ html * {
+     margin: 0;
+     padding: 0;
+     font-size: 62.5%;
+     box-sizing: border-box;
+
+ }
+
+ a {
+     text-decoration: none;
+     color: white;
+ }
+
+ body {
+     /*border: solid;*/
+     font-size: 16px;
+     font-family: 'Krub', sans-serif;
+
+
+ }
+
+ .home {
+
+     min-height: 100vh;
+     width: 100%;
+     background: linear-gradient(rgba(5, 7, 12, 0.9), rgba(5, 7, 12, 0.9)), url('../img/backgroudcod.jpeg');
+     position: relative;
+
+ }
+
+ header {
+     max-width: 1200px;
+     margin: auto;
+
+ }
+
+ .header_nav {
+     height: 60px;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     font-size: 2.6rem;
+
+ }
+
+ .nav_titulo a {
+     font-size: 1.9rem;
+     padding: 0;
+     margin: 0;
+
+ }
+
+ .nav_titulo a::before {
+     font-size: 1.5rem;
+     color: #3367d6;
+     padding-right: 4px;
+     content: '<';
+ }
+
+ .nav_titulo a::after {
+     font-size: 1.5rem;
+     color: #3367d6;
+     padding-left: 4px;
+     content: '/>';
+ }
+
+ .navegacion {
+     /* border: solid;*/
+     width: 500px;
+     display: flex;
+     justify-content: space-around;
+     box-sizing: border-box;
+
+ }
+
+ .navegacion a {
+     /*border: solid;*/
+     padding: 5px;
+ }
+
+ .navegacion :hover {
+     /*border: solid;*/
+     background-color: #3367d6;
+     border-radius: 2px;
+     transition: background-color .2s;
+ }
+
+
+ .home_cuerpo {
+     /*border: solid white;*/
+     width: 880px;
+     position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     display: flex;
+ }
+
+
+ .home_conjuntotext {
+     color: white;
+     font-size: 3.7rem;
+     text-align: center;
+     animation-name: aparecer;
+     animation-duration: 3s;
+ }
+
+ h1 {
+     color: #3367d6;
+     font-size: 3.7rem;
+     line-height: 35px;
+
+     animation-name: aparecer;
+     animation-duration: 3s;
+ }
+
+
+
+ figure {
+     margin: auto;
+ }
+
+ figure img {
+     max-width: 250px;
+     max-height: 250px;
+     border-radius: 50%;
+     animation-name: aparecer;
+     animation-duration: 3s;
+ }
+
+
+ @keyframes aparecer {
+     0% {
+         opacity: 0;
+
+     }
+
+     100% {
+         opacity: 1;
+
+     }
+
+ }
+
+ footer {
+     position: absolute;
+     bottom: 0;
+     color: beige;
+     font-size: 1.5rem;
+
+     display: flex;
+     width: 100%;
+     justify-content: center;
+
+ }
+
+ footer p {
+     background-color: rgba(41, 4, 163, 0.3);
+     padding: 10px 50px;
+     border-top-left-radius: 30px;
+     border-top-right-radius: 30px;
+ }
